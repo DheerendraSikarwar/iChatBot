@@ -3,7 +3,7 @@ Issue:
  Passing the complete conversation history manually to the LLM for every request increases code complexity and makes session management difficult, especially when supporting multiple users. Managing chat history yourself can quickly become error-prone and harder to scale.
     
 Solution:
-    This implementation uses RunnableWithMessageHistory with InMemoryChatMessageHistory to automatically store and retrieve conversation history based on a unique session_id. It simplifies chatbot development by enabling session-aware, context-rich conversations without requiring manual message management.
+    This implementation uses RunnableWithMessageHistory with InMemoryChatMessageHistory to automatically store and retrieve conversation history based on a unique session_id. It simplifies chatbot development by enabling session-aware, context-rich conversations without requiring manual message management. 
 """
 
 from dotenv import load_dotenv
