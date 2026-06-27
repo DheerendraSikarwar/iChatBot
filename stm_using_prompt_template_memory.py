@@ -1,7 +1,12 @@
 """
 Issue:
-
+	A standard LangChain chatbot does not automatically retain conversation history across multiple interactions, making it unable to 
+	understand follow-up questions or maintain context. Manually managing message history for each session also increases code complexity 
+	and becomes difficult to scale for multiple users.
 Solution:
+	This implementation uses RunnableWithMessageHistory together with MessagesPlaceholder and InMemoryChatMessageHistory to automatically 
+	manage conversation history on a per-session basis. By associating each interaction with a unique session_id, the chatbot preserves 
+	context across multiple turns, enabling more natural and context-aware conversations without manual history management.
 """
 
 from dotenv import load_dotenv
