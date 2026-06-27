@@ -1,5 +1,5 @@
 ## Project Name
-iChatBot - using chat history to mentained short-term memory 
+iChatBot - using chat history to mentained short-term memory from manual to developer choice. 
 
 ## 1. How to create virtual environment
 ### Initialize working workspace using uv package
